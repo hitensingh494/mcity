@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complaint Form</title>
+        <style>
+            #main-content{
+                margin: auto;
+                border: 2px solid black;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+                margin-left: 200px;
+                margin-right: 200px;
+                display: flex;
+            }
+            #WARNING{
+                background-color: rgba(255, 0, 0, 0.637);
+                color: white;
+            }
+            body{
+            
+            }          
+            #header{
+                border-bottom: 2px solid black;
+            }
+
+            #lab1{
+                display: flex;
+                gap: 170px;
+            }
+            #inp1{
+                display: flex;
+                gap: 50px;
+            }
+            .bro{
+                width: 280px;
+                height: 40px;
+                font-size: 14px;
+                background-color: rgb(202, 202, 202);
+            }
+            #select{
+                width: 300px;
+                height: 40px;
+                font-size: 16px;
+            }
+            .bro:hover{
+                background-color: white;
+                transition: 0.5s;
+            }
+            #pic-left{
+                border-right: 2px solid black;
+                margin-right: 170px;
+            }
+            #sub:hover{
+                background-color: rgba(0, 153, 255, 0.568);
+                transition: 0.5s;
+            }
+            #sub{
+                width: 200px; 
+                height: 40px; 
+                font-size: 16px; 
+                background-color: rgb(2, 204, 255); 
+                color: white;
+                border: none; 
+                border-radius: 5px; 
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="main-content">
+            <form>
+                <h1 id="header">⍟Complaint Form - City Police Website⍟</h1>
+                
+                <p id="WARNING">⍟►WARNING: DO NOT SUBMIT YOUR PERSONAL INFORMATION. YOUR GIVEN INFORMATION IS CHECKED AND PROCESSED BY MANY PEOPLE AND MACHINES.</p><hr>
+                <div id="pic-left">
+                <div id="lab1">
+                <label style="font-size: 20px;"><strong>⍟Enter your full name</strong></label>
+                <label style="font-size: 20px;"><Strong>⍟Email ID :</Strong></label><br>
+                </div><br>
+                <div id="inp1">
+                <input type="text" id="name" name="name" placeholder="eg. John Doe" class="bro"><br><br>
+                
+                <input type="email" id="email" placeholder="me.myself@myidholder.com"required class="bro"><br><br>
+
+                </div><br><br>
+                <label style="font-size: 20px;"><strong>⍟Choose your Complaint reason.</strong></label><br>
+                <select id="select">
+                    <option>Select your complaint reason</option>
+                    <option>Assualt</option>
+                    <option>Battery</option>
+                    <option>Harassment</option>
+                    <option>Trespassing</option>
+                    <option>Racism</option>
+                    <option>Accident (Hit-and-run)</option>
+                    <option>Vandalisation</option>
+                </select><br><br>
+                <label><strong>Enter your comment</strong></label><br>
+                <textarea rows="10" cols="40" placeholder="tell us more . . . ."></textarea>
+                </div>
+                <div>
+                <p>Please Note: sending fake/false reports against someone/something is a criminal offense and is punishable by law. Punishments might include heavy fines and/or imprisonment.</p>
+                <input id="sub" type="submit" value="Submit Complaint">
+                </div>
+            </form>
+        
+        </section>
+    </body>
+</html>

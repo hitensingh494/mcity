@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iForce formal web </title>
+   
+        <style>
+            #naviga{
+                background-color: rgba(0, 183, 255, 0.842);
+                
+                display: flex;
+                width: 260px;
+                flex-direction: column;
+            }
+            #mcps{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+                margin-left: 15px;
+                margin-right: 5px;
+
+            }
+            body{
+                display: flex;
+            }
+            #main-content{
+                flex: 1;
+                max-width: 80%;
+            }
+            a{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+                margin-left: 15px;
+            }
+            hr{
+                color: white;
+                width: 240px;
+            }
+            a:hover{
+                color: gold;
+                transition: 1s;
+                background-color: rgb(160, 17, 17);
+            }
+            #header{
+                color: rgb(255, 255, 255);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                
+                min-height: 240px;
+                background-image: url(https://media.istockphoto.com/photos/cityscape-in-an-indian-city-with-concrete-buildings-and-skyscrap-picture-id950336722?k=6&m=950336722&s=170667a&w=0&h=ci-0aIg3lHQVduLZXq4i-3JxfYmWiDouquDnblMrAcY=);
+                padding-top: 45px;
+                padding-bottom: 60px;
+                max-width: 100%;
+                
+            }
+            
+            #only{
+                color: black;
+            }
+            
+            #h{
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                display: flex;
+                flex: 1;
+            }
+         
+
+            html{
+                scroll-behavior: smooth;
+            }
+
+            #history{
+                
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            .pluh{
+                height: 40px;
+                width: 40px;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                margin-top: 7px;
+                margin-left: 40px;
+                border-radius: 10px;
+            }
+            #cty{
+                border: 0.5px solid black;
+                width: 150px;
+                margin-left: 10px;
+                border-radius: 10px;
+                background-color: rgb(0, 174, 255);
+                margin-top: 20px;
+                margin-bottom: 20px;
+                align-items: center;
+                
+            }
+
+            #count{
+                display: flex;
+                background-color: rgba(255, 255, 255, 0.61);
+                border: 1px;
+                border-radius: 5px;
+                background-color: darkgrey;
+                width: 1300px;
+                height: 200px;
+                gap: 30px;
+            }
+            #cst{
+              border: 0.5px solid black; 
+              border-radius: 10px; 
+              width: 150px; 
+              margin-left: 10px; 
+              background-color: rgb(72, 255, 0); 
+              margin-top: 25px; 
+              margin-bottom: 25px;
+            }
+            #cp{
+              border: 0.5px solid black; 
+              border-radius: 10px;
+              width: 150px; 
+              margin-left: 10px; 
+              background-color: darkorange; 
+              margin-top: 25px; 
+              margin-bottom: 25px;
+              justify-content: center;
+              align-items: center;
+            }
+            #sch{
+                border: 0.5px solid black; 
+                border-radius: 10px; 
+                width: 150px; 
+                margin-left: 10px; 
+                background-color: rgb(255, 169, 63); 
+                margin-top: 25px; 
+                margin-bottom: 25px;
+            }
+
+            #file{
+                border: 0.5px solid black;
+                border-radius: 100px; 
+                width: 150px; 
+                margin-left: 10px; 
+                background-color: darkorange; 
+                margin-top: 25px; 
+                margin-bottom: 25px;
+                justify-content: center;
+            }
+
+            #cityintro{
+                
+                border-right: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                flex: 2;
+            }
+            #toffeeWrapper{
+                display: flex;
+                align-items: flex-start;
+            }
+            #mmm{
+                flex: 2;
+            }
+            #footer{
+                background-color: lightslategray;
+            }
+            #cty:hover{
+                background-color: rgb(0, 128, 187);
+                transition: 0.5s;
+                box-shadow: 9px 9px 8px grey;
+                cursor: pointer;
+            }
+            #cst:hover{
+                background-color: rgb(36, 187, 0);
+                transition: 0.5s;
+                box-shadow: 9px 9px 8px grey;
+                cursor: pointer;
+            }
+            #cp:hover{
+                background-color: rgb(255, 140, 0);
+                transition: 0.5s;
+                box-shadow: 9px 9px 8px grey;
+                cursor: pointer;
+            }
+            #sch:hover{
+                background-color: rgb(255, 140, 0);
+                transition: 0.5s;
+                box-shadow: 9px 9px 8px grey;
+                cursor: pointer;
+            }
+            #fac{
+                border: 0.5px solid black; 
+                border-radius: 10px; 
+                width: 200px; 
+                margin-left: 10px; 
+                background-color: rgb(255, 83, 83); 
+                margin-top: 25px; 
+                margin-bottom: 25px;
+                height: 145px;
+            }
+            #fac:hover{
+                background-color: rgb(255, 36, 36);
+                transition: 0.5s;
+                box-shadow: 9px 9px 8px grey;
+                cursor: pointer;
+            }
+            #ecrimes table{
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="naviga">
+        <h1 id="mcps">Metropolitical city 🚔
+        <br>Police station</h1><hr><br>
+        <a href = #brief>Brief </a> <br>
+        <a href = #cityintro>About the City</a> <br>
+        <a href="https://mearrest.netlify.app">Arrest Warrants</a> <br>
+        <a href="https://meform.netlify.app/">complaints</a> <br>
+        <a href=#history>Complaint history</a><br>
+        <a href="#ecrimes">E-crimes</a><br>
+        <a href="Police Roles">Roles</a><br>
+        <a href="idk">Bibliography</a><br>
+        <a href="#footer">IMPORTANT INFORMATION</a>
+        </section>
+        
+        <section id="main-content">
+        <div id="heading">
+           
+           <p id="header"><span style="size: 40px; color: rgb(255, 145, 0);">Welcome to,</span><br><span style="font-size: 90px; color: rgb(255, 217, 0);">The Metropolitical city Police station</span></p><hr id="only">
+           
+        </div>
+            <div id="brief">
+            <h1 id="h">Metropolitical city 🚔
+                        Police forces</h1>
+            <h3 id="h">We are the official Metropolitical city police under the government of (countryname). We 
+                are further divided into sub-branches for each locality. contact us at 67420 (local code)</h3>
+        </div>
+        <hr>
+        <div id="count">
+            <section id="cty">
+            <img  class="pluh"  src="https://static.vecteezy.com/system/resources/previews/012/893/216/original/eps10-green-copy-file-or-document-line-art-icon-isolated-on-white-background-paper-or-page-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-app-vector.jpg" alt="">
+            <h4>120k+ cases this year</h4>
+            </section>
+            <section id="cst">
+            <img class="pluh" src="https://static.vecteezy.com/system/resources/previews/022/459/086/large_2x/green-check-mark-icon-in-a-circle-green-tick-icon-vector.jpg">
+            <h4>102k+ cases solved (out of total)</h4>
+            </section>
+            <section id="cp">
+                <img class="pluh" src="https://cdn-icons-png.flaticon.com/256/7256/7256192.png">
+                <h4>10k+ cases pending investigation</h4>
+            </section>
+            <section id="sch">
+                <img class="pluh" id="https://seekicon.com/free-icon-download/clock-check_1.svg">
+                <h4> 8k+ Cases pending hearing</h4>
+            
+            </section>
+            <section id="fac">
+                <img src="https://cdn3.iconfinder.com/data/icons/complete-common-version-4-8/1024/file12-512.png" class="pluh">
+                <h4>File an complaint/FIR*</h4>
+            </section>
+        </div>
+        <div id="toffeeWrapper">
+
+        <div id="cityintro">
+            <h1 id="h">The Metropolitical City</h1>
+            <p id="h">The Metropolitical city is an beautiful, eye-catching attractive city with many tourist spots,
+                making it one of the most visited cities in the entire country. We have massive monuments such as the oreo trident, 
+                the famous Dennis museum and the most beautiful sport complex in the entire of (countryname).<br>
+                This beautiful city is located in the lap of the (mountainname) mountains and is known for it's greenery.
+                <br>
+                The government spends a lot of money to maintain the city.<br>
+
+                The City of Metropolitican was a part of the sandolioga city before it was declared an official district by the then 
+                chief minister sir Ypoasn ufdas on the occasion of independence day. 
+
+                Metropolitical city is an rising city in terms of industry. It's famous sector zone-3 is known for large industries.
+
+                IF you are a citizen and seek for news on the city, please read the notes gievn right next to this paragraph/note.
+            </p>
+       
+            
+            
+       
+        </div>
+        <div id="mmm">
+            <h3 id="h">Upcoming 
+            </h3>
+            <p id="h">The following things can be expected in the upcoming police policies.
+                <ul>
+                    <li>Due to security issues, border security will increase. </li>
+                    <li>Stronger rights will be given to the traffic police for enhanced law enforcement.</li>
+                    <li>20+ new local police stations will be built</li>
+                    <li>100+ new traffic police booths will be bult</li>
+                    <li>Traffic police will be provided with well-sppeding cars for high speed chases on cars.</li>
+                    <li>20+ new police cars will be bought.</li>
+                    <li>10 new police trucks will be bought.</li>
+                </ul>
+            </p>
+            
+        </div>
+    </div>
+ 
+    >
+        <div id="history">
+            <h1 id="h">
+                Complaint history (THIS MONTH)
+            </h1>
+            <table id="history">
+                <thead>
+                <tr>
+                <th>Case Name</th>
+                <th>Case Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>State V/S STAR TOP SOCIETY</td>
+                        <td>SOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>Arun Kumar Missing Case</td>
+                        <td>SOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>SANCHIT KUMAR FRAUD CASE</td>
+                        <td>PENDING HEARING</td>
+                    </tr>
+                    <tr>
+                        <td>Ragu Fraud Case</td>
+                        <td>SOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>RAGHAV FRAUD CASE</td>
+                        <td>SOLVED</td>
+
+                    </tr>
+                    <tr>
+                        <td>VIRAT MISHRA V/S STAR TOP SOCIETY</td>
+                        <td>SOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>STATE V/S ADITYA SINGH</td>
+                        <td>SOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>BHAVYA KUMAR MISSING SEARCH CASE</td>
+                        <td>PENDING</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            
+               
+            </h3>
+        </div>
+        <div id="ecrimes">
+            <h1 class="h">E-crime record</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Case Name</th>
+                        <th>Case Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Phishing case against RAHUL SHARMA</td>
+                        <td>SOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>Hacking case against ANKIT KUMAR</td>
+                        <td>PENDING INVESTIGATION</td>
+                    </tr>
+                    <tr>
+                        <td>Online fraud case against SUMIT JAIN</td>
+                        <td>SOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>Identity theft case against PRIYA SINGH</td>
+                        <td>PENDING HEARING</td>
+                    </tr>
+                </tbody>
+        </div>
+        </section><br><br>
+       
+    </body>
+</html>
+        
+            
+        
